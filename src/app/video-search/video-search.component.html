@@ -1,0 +1,8 @@
+<div class="main-grid">
+    <div class="search-bar"> 
+        <app-search-bar (outputSearch)="onSearch($event)"></app-search-bar>
+    </div>   
+    <div class="video-grid">
+        <app-video-grid [movies]="movies"></app-video-grid>
+    </div> 
+</div>
