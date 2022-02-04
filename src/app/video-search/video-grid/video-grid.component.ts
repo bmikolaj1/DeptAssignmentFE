@@ -12,7 +12,6 @@ import { VideoSearchService } from '../video-search.service';
 export class VideoGridComponent implements OnInit {
   @Input() movies: IMovie[] = [];
 
-
   constructor(public dialog: MatDialog, private _videoSearchSvc: VideoSearchService) { }
 
   ngOnInit(): void {

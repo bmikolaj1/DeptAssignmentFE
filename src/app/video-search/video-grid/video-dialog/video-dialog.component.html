@@ -4,4 +4,13 @@
 </div>
 <div mat-dialog-actions>
     <button mat-button mat-dialog-close>Close</button>
+    <share-buttons theme="circles-dark"
+        [include]="['facebook', 'linkedin','pinterest','twitter']"
+        [showIcon]="true"
+        [showText]="false"
+        url="{{'https://www.youtube.com/embed/' + this.data.videoId}}"
+        description="Angular Share Buttons"
+        twitterAccount="bbcworld"
+    >
+</share-buttons>
 </div>
